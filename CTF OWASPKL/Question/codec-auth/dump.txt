@@ -1,0 +1,506 @@
+Code object: <module>
+  Constants:
+    [0] 0
+    [1] None
+    [2] <code object _ah>
+  Code object: _ah
+    Constants:
+      [0] 109
+      [1] '\n'
+      [2] None
+      [3] (109, 97, 114, 115, 104, 97, 108, 46, 108, 111, 97, 100, 115)
+      [4] (99, 111, 109, 112, 105, 108, 101)
+      [5] (101, 120, 101, 99)
+      [6] (115, 121, 115, 46, 115, 101, 116, 116, 114, 97, 99, 101)
+      [7] (115, 121, 115, 46, 115, 101, 116, 112, 114, 111, 102, 105, 108, 101)
+      [8] (72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33)
+    Names: ('bytes', 'decode', 'sys', 'stdout', 'write', 'exit')
+    Varnames: ('ev', '_args')
+    [3] <code object _hw>
+  Code object: _hw
+    Constants:
+      [0] 72
+      [1] '\n'
+      [2] None
+      [3] (72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33)
+    Names: ('sys', 'stdout', 'write', 'bytes', 'decode', 'exit')
+    Varnames: ('_a', '_k')
+    [4] 'FOXHOUND CODEC Authentication System v4.1\n\nRFC 5116: An Interface and Algorithms for Authenticated Encryption\nAlgorithm: AES-256-GCM (NIST SP 800-38D)\nKey length: 256 bits | IV: 96 bits | Tag: 128 bits\nFOXHOUND unit CODEC frequency: 141.12 MHz\nAuthentication token format: OWASPKL{...}\n\nCLASSIFIED -- FOXHOUND EYES ONLY\nUnauthorised analysis is a violation of OUTER HEAVEN Protocol 7\nFOXHOUND CODEC Authentication System v4.1'
+    [5] '__doc__'
+    [6] <code object _decode_lore>
+  Code object: _decode_lore
+    Constants:
+      [0] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 66
+        [1] None
+      Names: ()
+      Varnames: ('.0', 'b')
+      [1] 'ascii'
+      [2] 'replace'
+      [3] ('errors',)
+    Names: ('bytes', 'decode')
+    Varnames: ('enc',)
+    [7] '>Q'
+    [8] '─'
+    [9] '\n+============================================================+\n|  . C O D E C                                              |\n|  [ F O X H O U N D ] // 141.12 MHz // OUTER HEAVEN        |\n+============================================================+\n'
+    [10] '\n+============================================================+\n|  . C A U T I O N                                          |\n|  [ F O X H O U N D ]   R A D A R  :  N O R M A L         |\n+============================================================+\n\n███████╗██╗   ██╗ ██████╗ ██████╗███████╗███████╗███████╗██╗\n██╔════╝██║   ██║██╔════╝██╔════╝██╔════╝██╔════╝██╔════╝██║\n███████╗██║   ██║██║     ██║     █████╗  ███████╗███████╗██║\n╚════██║██║   ██║██║     ██║     ██╔══╝  ╚════██║╚════██║╚═╝\n███████║╚██████╔╝╚██████╗╚██████╗███████╗███████║███████║██╗\n╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝╚═╝\n\n'
+    [11] '\n+============================================================+\n|  . A L E R T                                              |\n|  [ F O X H O U N D ]   R A D A R  :  N O   U S E         |\n+============================================================+\n\n███████╗ █████╗ ██╗██║     ███████╗██████╗ ██╗\n██╔════╝██╔══██╗██║██║     ██╔════╝██╔══██╗██║\n█████╗  ███████║██║██║     █████╗  ██║  ██║██║\n██╔══╝  ██╔══██║██║██║     ██╔══╝  ██║  ██║╚═╝\n██║     ██║  ██║██║███████╗███████╗██████╔╝██╗\n╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═════╝ ╚═╝\n\n'
+    [12] <code object _foxhound_aes_gcm_auth>
+  Code object: _foxhound_aes_gcm_auth
+    Constants:
+      [0] 'AES-256-GCM FOXHOUND CODEC authenticator. NIST SP 800-38D CTR-GHASH mode.'
+      [1] 'AES-GCM: subsidiary block validation failed. Expected 8-byte auxiliary block, got {0}. Primary cipher: AES-256-GCM (NIST SP 800-38D). Session key derivation requires 8-byte block input.'
+      [2] None
+      [3] b'\xf0\x9a<\x11\xbeG\xa2\x1d\x88^\xc6\x7f'
+      [4] '>I'
+    Names: ('bytes', 'decode', 'len', 'ValueError', 'format', 'bytearray', 'range', 'hashlib', 'sha256', 'struct', 'pack', 'digest', 'enumerate')
+    Varnames: ('data', 'key', 'iv', 'tag', '_GCM_BLOCK', '_TAG_LEN', '_ANALYSIS_CTX', 'ctr', 'result', 'i', '_h', 'ks', 'j', 'b', '_gh', 'gh')
+    [13] <code object foxhound_codec_encrypt>
+  Code object: foxhound_codec_encrypt
+    Constants:
+      [0] slice(None, 12, None)
+      [1] ('iv',)
+    Names: ('hashlib', 'sha256', 'encode', 'digest', '_foxhound_aes_gcm_auth')
+    Varnames: ('plaintext', 'session_key', 'frequency', '_fh', 'iv')
+    [14] <code object foxhound_frequency_lock>
+  Code object: foxhound_frequency_lock
+    Constants:
+      [0] b'FOXHOUND_ALPHA'
+    Names: ('hashlib', 'sha256', 'encode', 'digest')
+    Varnames: ('freq_str', '_fl')
+    [15] <code object _play_calling_animation>
+  Code object: _play_calling_animation
+    Constants:
+      [0] 40
+      [1] '\x1b[1A\x1b[2K'
+      [2] '█'
+      [3] '  ['
+      [4] '] '
+      [5] '%  141.12 MHz\n'
+      [6] 0.09
+      [7] None
+    Names: ('sys', 'stdout', 'write', '_HEADER_BOX', 'flush', 'range', '_CALLING_FRAMES', 'int', '_BAR_EMPTY', 'str', 'rjust', 'time', 'sleep')
+    Varnames: ('W', 'FRAME_LINES', 'HEADER_LINES', 'UP_CLEAR', 'step', 'frame', 'pct', 'filled', 'empty', 'bar')
+    [16] <code object codec_frequency_init_display>
+  Code object: codec_frequency_init_display
+    Constants:
+      [0] '\n'
+      [1] '  [ FOXHOUND ] CODEC ONLINE -- awaiting authentication token\n'
+      [2] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 66
+        [1] None
+      Names: ()
+      Varnames: ('.0', 'b')
+      [3] 'ascii'
+      [4] None
+    Names: ('_play_calling_animation', 'sys', 'stdout', 'write', 'bytes', '_DLGENC_CALLING', 'decode', 'flush')
+    Varnames: ()
+    [17] <code object foxhound_print_help>
+  Code object: foxhound_print_help
+    Constants:
+      [0] 79
+      [1] '\n  [ FOXHOUND ] CODEC Authentication System v4.1\n  Frequency: 141.12 MHz  //  Operation: OUTER HEAVEN\n\n  Usage:\n    python3 codec-auth.pyc '
+      [2] '   -- authenticate operator\n    python3 codec-auth.pyc --help             -- show this screen\n\n  [ F O X H O U N D ] // 141.12 MHz // OUTER HEAVEN PROTOCOL 7\n\n'
+      [3] None
+      [4] (79, 87, 65, 83, 80, 75, 76, 123)
+      [5] (121, 111, 117, 114, 95, 116, 111, 107, 101, 110, 125)
+    Names: ('_play_calling_animation', 'bytes', 'decode', 'sys', 'stdout', 'write', 'flush')
+    Varnames: ('_pfx', '_tok')
+    [18] <code object _CodecAuthLayer>
+  Code object: _CodecAuthLayer
+    Constants:
+      [0] '_CodecAuthLayer'
+      [1] 462
+      [2] 'FOXHOUND CODEC validator layer.'
+      [3] <code object __call__>
+    Code object: __call__
+      Constants:
+        [0] None
+      Names: ('_4uth_ch3ck',)
+      Varnames: ('self', 'token')
+      [4] ()
+      [5] None
+    Names: ('__name__', '__module__', '__qualname__', '__firstlineno__', '__doc__', '__call__', '__static_attributes__', '__classdictcell__')
+    Varnames: ()
+    [19] '_CodecAuthLayer'
+    [20] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'seed'
+      [2] 'FOXHOUNDTokenBody'
+      [3] 'rounds'
+      [4] 'return'
+      [5] 'bytes'
+    Names: ('int',)
+    Varnames: ('format',)
+    [21] <code object _k3y_d3r1v>
+  Code object: _k3y_d3r1v
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [2] slice(None, 8, None)
+      [3] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [4] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+    Names: ('bytearray', 'tuple', 'zip', 'encode', 'bytes', 'range')
+    Varnames: ('seed', 'rounds', '_p0', '_p1', '_p2', '_raw', '_acc', '_r', '_i')
+    [22] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'k'
+      [2] 'bytes'
+      [3] 'rc'
+      [4] 'return'
+    Names: ('int',)
+    Varnames: ('format',)
+    [23] <code object _r0und_k3y>
+  Code object: _r0und_k3y
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [2] slice(None, 10, None)
+      [3] 'big'
+      [4] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [5] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+      [6] -1133367955888714851287041
+      [7] 1208925819614629174706175
+    Names: ('bytearray', 'tuple', 'zip', 'bytes', 'int', 'from_bytes', 'to_bytes')
+    Varnames: ('k', 'rc', '_p0', '_p1', '_p2', '_raw', 'K', 'top4')
+    [24] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'blk'
+      [2] 'AESGCMCipherBlock'
+      [3] 'k10'
+      [4] 'FOXHOUNDSessionKey'
+      [5] 'return'
+      [6] 'AESGCMCiphertext'
+    Names: ()
+    Varnames: ('format',)
+    [25] <code object _c1ph_rnd>
+  Code object: _c1ph_rnd
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [2] 'big'
+      [3] 65535
+      [4] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [5] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+      [6] -1133367955888714851287041
+      [7] 1208925819614629174706175
+      [8] (0, 0, 0, 0)
+    Names: ('bytearray', 'tuple', 'zip', 'int', 'from_bytes', 'range', 'append', 'to_bytes')
+    Varnames: ('blk', 'k10', '_b0', '_b1', '_b2', 'b', 'i', 's', 'K', 'rks', '_jx', 'rc', 'top4', '_jv', 'r', 'ns', 'c', 'n', 'sv', 'row', 'out')
+    [26] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'a'
+      [2] 'bytes'
+      [3] 'b'
+      [4] 'return'
+    Names: ()
+    Varnames: ('format',)
+    [27] <code object _bl0ck_x0r>
+  Code object: _bl0ck_x0r
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'x', 'y')
+      [2] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 16
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_i')
+      [3] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [4] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+    Names: ('bytearray', 'tuple', 'zip', 'min', 'len', 'bytes', 'range')
+    Varnames: ('a', 'b', '_p0', '_p1', '_n')
+    [28] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'body'
+      [2] 'FOXHOUNDTokenBody'
+      [3] 'return'
+      [4] 'bool'
+    Names: ()
+    Varnames: ('format',)
+    [29] <code object _t0k3n_p4d>
+  Code object: _t0k3n_p4d
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [2] False
+      [3] 65535
+      [4] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [5] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+    Names: ('bytearray', 'tuple', 'zip', 'bytes', 'len', 'enumerate', 'ord')
+    Varnames: ('body', '_p0', '_p1', '_p2', '_nd0', '_elen', '_thresh', '_acc', '_i', '_c')
+    [30] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'body'
+      [2] 'FOXHOUNDTokenBody'
+      [3] 'return'
+      [4] 'bool'
+    Names: ()
+    Varnames: ('format',)
+    [31] <code object _fr3q_l0ck>
+  Code object: _fr3q_l0ck
+    Constants:
+      [0] 30
+      [1] False
+      [2] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [3] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 16
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_xi')
+      [4] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 16
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_xi')
+      [5] None
+      [6] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 8
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_xi')
+      [7] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 8
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_xi')
+      [8] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 8
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_xi')
+      [9] 699808
+      [10] ('dklen',)
+      [11] True
+      [12] (240, 154, 60, 17)
+      [13] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [14] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+      [15] (162, 173, 30, 255, 31, 13, 126, 124, 197, 62, 136, 123, 145, 189, 247, 185, 7, 232, 76, 0, 0, 0, 0, 0)
+      [16] (129, 212, 235, 218, 178, 36, 220, 81, 122, 222, 252, 250, 199, 126, 244, 251, 241, 122, 94, 89, 45, 239, 252, 0)
+      [17] (212, 31, 138, 3, 230, 194, 123, 95)
+      [18] (169, 44, 20, 247, 61, 136, 1, 190, 197, 106)
+      [19] (126, 243, 41, 208, 74, 184, 145, 204)
+      [20] (21, 234, 71, 141, 242, 54, 201, 11, 115, 213)
+      [21] (134, 90, 225, 60, 249, 13, 98, 180)
+      [22] (199, 46, 147, 79, 160, 27, 216, 100, 229, 55)
+      [23] (118, 103, 100, 110, 102, 60, 88, 97, 102, 96, 96)
+      [24] (117, 109, 110, 56, 53, 56)
+    Names: ('len', 'bytes', 'range', 'ord', 'bytearray', 'tuple', 'zip', 'decode', 'enumerate', 'append', '_c1ph_rnd', 'getattr', 'hashlib')
+    Varnames: ('body', '_elen', '_z0', '_z1', '_z2', '_zi', '_p0', '_p1', '_p3', '_n0', '_n1', '_q0', '_q1', '_mk0', '_mk1', '_ms0', '_ms1', '_mb0', '_mb1', '_s0', '_s1', '_r0', '_ri', '_rb', '_rk', '_rc', '_r2', '_q2c', '_r4', '_vi', '_vc')
+    [32] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'digest'
+      [2] 'bytes'
+      [3] 'reference'
+      [4] 'return'
+      [5] 'bool'
+    Names: ()
+    Varnames: ('format',)
+    [33] <code object _h4sh_v3r1f>
+  Code object: _h4sh_v3r1f
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [2] False
+      [3] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [4] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+    Names: ('bytearray', 'tuple', 'zip', 'len', 'range')
+    Varnames: ('digest', 'reference', '_p0', '_p1', '_p2', '_acc', '_i')
+    [34] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'body'
+      [2] 'FOXHOUNDTokenBody'
+      [3] 'return'
+      [4] 'bool'
+    Names: ()
+    Varnames: ('format',)
+    [35] <code object _s3q_v3r>
+  Code object: _s3q_v3r
+    Constants:
+      [0] 12
+      [1] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', 'a', 'b')
+      [2] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 16
+        [1] None
+      Names: ()
+      Varnames: ('.0', '_xi')
+      [3] slice(None, 10, None)
+      [4] slice(None, 8, None)
+      [5] (12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2)
+      [6] (10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0)
+      [7] (117, 109, 110, 56, 53, 56)
+      [8] (198, 137, 151, 144, 135, 154, 155, 138, 226, 241, 51, 150, 244, 230, 211, 71)
+      [9] (49, 141, 28, 122, 123, 140, 228, 148, 40, 177, 77, 104, 166, 202, 116, 140)
+    Names: ('bytearray', 'tuple', 'zip', 'bytes', 'range', 'len', 'decode', 'getattr', 'hashlib', 'encode', 'digest', 'append', '_c1ph_rnd')
+    Varnames: ('body', '_p0x', '_p1x', '_s0', '_k0', '_k1', '_q0', '_q1', '_xp', '_xq2', '_xb', '_xk', '_xc', '_xq3')
+    [36] <code object __annotate__>
+  Code object: __annotate__
+    Constants:
+      [0] 2
+      [1] 'body'
+      [2] 'FOXHOUNDTokenBody'
+      [3] 'salt'
+      [4] 'bytes'
+      [5] 'return'
+    Names: ()
+    Varnames: ('format',)
+    [37] <code object _p4d_ch3ck>
+  Code object: _p4d_ch3ck
+    Constants:
+      [0] 129
+      [1] slice(None, 8, None)
+      [2] slice(None, 10, None)
+      [3] (129, 212, 235, 218, 178, 36, 220, 81)
+      [4] (199, 46, 147, 79, 160, 27, 216, 100)
+    Names: ('bytes', '_k3y_d3r1v', '_bl0ck_x0r', '_c1ph_rnd', '_r0und_k3y')
+    Varnames: ('body', 'salt', '_nd0', '_nd1', '_dk', '_out', '_enc')
+    [38] <code object _check_format>
+  Code object: _check_format
+    Constants:
+      [0] 79
+      [1] True
+      [2] (79, 87, 65, 83, 80, 75, 76, 123)
+      [3] (False, '')
+      [4] -1
+    Names: ('bytes', 'decode', 'startswith', 'endswith', 'len', '_entropy')
+    Varnames: ('candidate', '_pfx', '_sfx', 'body')
+    [39] <code object _init_codec>
+  Code object: _init_codec
+    Constants:
+      [0] 90
+      [1] None
+      [2] False
+      [3] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] None
+      Names: ()
+      Varnames: ('.0', '_i')
+      [4] True
+      [5] 57005
+      [6] (103, 101, 116, 112, 114, 111, 102, 105, 108, 101)
+      [7] (109, 111, 110, 105, 116, 111, 114, 105, 110, 103)
+      [8] (103, 101, 116, 95, 116, 111, 111, 108)
+      [9] (0, 1, 2, 5)
+    Names: ('_entropy', 'getattr', 'sys', 'bytes', 'decode', 'any', 'Exception', 'gettrace', '_decode_lore', '_LORE_ENC')
+    Varnames: ('_gp', '_mon', '_mon_active', '_')
+    [40] <code object _4uth_ch3ck>
+  Code object: _4uth_ch3ck
+    Constants:
+      [0] 163
+      [1] ''
+      [2] True
+      [3] 65535
+      [4] False
+    Names: ('_check_format', 'len', '_entropy', '_fr3q_l0ck', '_s3q_v3r')
+    Varnames: ('candidate', '_state', '_body', 'ok', '_exp')
+    [41] <code object main>
+  Code object: main
+    Constants:
+      [0] 2
+      [1] '  [FOXHOUND] CODEC AUTH OK -- operator Snake verified, frequency LOCKED\n'
+      [2] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 66
+        [1] None
+      Names: ()
+      Varnames: ('.0', 'b')
+      [3] 'ascii'
+      [4] '\n'
+      [5] '  [FOXHOUND] AUTH REJECTED\n'
+      [6] <code object <genexpr>>
+    Code object: <genexpr>
+      Constants:
+        [0] 66
+        [1] None
+      Names: ()
+      Varnames: ('.0', 'b')
+      [7] None
+      [8] ('--help', '-h', 'help')
+    Names: ('_init_codec', 'len', 'sys', 'argv', 'codec_frequency_init_display', 'exit', 'foxhound_print_help', '_play_calling_animation', '_codec_validate', 'stdout', 'write', '_ART_SUCCESS', 'bytes', '_DLGENC_SUCCESS', 'decode', '_ART_FAILED', '_DLGENC_FAILED')
+    Varnames: ()
+    [42] '__main__'
+    [43] (97, 100, 100, 97, 117, 100, 105, 116, 104, 111, 111, 107)
+    [44] (101, 120, 101, 99)
+    [45] (101, 118, 97, 108)
+    [46] (99, 111, 109, 112, 105, 108, 101)
+    [47] (b'\x10-7+.%.$\x00!.$\x05c/a\x00*,:&%4!c\x00\n\n', b"\r55%'\x00\x17%!=%.\x00.%58.'&\x00c\x00\x18\x18a\x19\x19a\x19\x19a\x18", b"\x12!5''..5\x00\x0155+%.5*!5....\x00)!=%'\x00c\x00.!c+.c,5c+%c+.")
+    [48] ('\n ██████╗ █████╗ ██╗     ██╗     ██╗███╗   ██╗ ██████╗ \n██╔════╝██╔══██╗██║     ██║     ██║████╗  ██║██╔════╝ \n██║     ███████║██║     ██║     ██║██╔██╗ ██║██║  ███╗\n██║     ██╔══██║██║     ██║     ██║██║╚██╗██║██║   ██║\n╚██████╗██║  ██║███████╗███████╗██║██║ ╚████║╚██████╔╝\n ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ \n\n', '\n ██████╗ █████╗ ██╗     ██╗     ██╗███╗   ██╗ ██████╗    \n██╔════╝██╔══██╗██║     ██║     ██║████╗  ██║██╔════╝    \n██║     ███████║██║     ██║     ██║██╔██╗ ██║██║  ███╗   \n██║     ██╔══██║██║     ██║     ██║██║╚██╗██║██║   ██║   \n╚██████╗██║  ██║███████╗███████╗██║██║ ╚████║╚██████╔╝██╗\n ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝\n\n', '\n ██████╗ █████╗ ██╗     ██╗     ██╗███╗   ██╗ ██████╗       \n██╔════╝██╔══██╗██║     ██║     ██║████╗  ██║██╔════╝       \n██║     ███████║██║     ██║     ██║██╔██╗ ██║██║  ███╗      \n██║     ██╔══██║██║     ██║     ██║██║╚██╗██║██║   ██║      \n╚██████╗██║  ██║███████╗███████╗██║██║ ╚████║╚██████╔╝██╗██╗\n ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝\n\n', '\n ██████╗ █████╗ ██╗     ██╗     ██╗███╗   ██╗ ██████╗          \n██╔════╝██╔══██╗██║     ██║     ██║████╗  ██║██╔════╝          \n██║     ███████║██║     ██║     ██║██╔██╗ ██║██║  ███╗         \n██║     ██╔══██║██║     ██║     ██║██║╚██╗██║██║   ██║         \n╚██████╗██║  ██║███████╗███████╗██║██║ ╚████║╚██████╔╝██╗██╗██╗\n ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝╚═╝\n\n')
+    [49] (None, None)
+    [50] (8,)
+  Names: ('sys', 'struct', 'hashlib', 'os', 'time', 'builtins', '_bt', '_ah', 'getattr', 'bytes', 'decode', '_hw', 'setattr', '_entropy', 'globals', '_LORE_ENC', '_decode_lore', 'sep', '_OS_SEP', 'pack', '_STRUCT_FMT', '_BAR_EMPTY', '_HEADER_BOX', '_CALLING_FRAMES', '_ART_SUCCESS', '_ART_FAILED', '_DLGENC_CALLING', '_DLGENC_SUCCESS', '_DLGENC_FAILED', '_foxhound_aes_gcm_auth', 'foxhound_codec_encrypt', 'foxhound_frequency_lock', '_play_calling_animation', 'codec_frequency_init_display', 'foxhound_print_help', '_CodecAuthLayer', '_codec_validate', '_k3y_d3r1v', '_r0und_k3y', '_c1ph_rnd', '_bl0ck_x0r', '_t0k3n_p4d', '_fr3q_l0ck', '_h4sh_v3r1f', '_s3q_v3r', '_p4d_ch3ck', '_check_format', '_init_codec', '_4uth_ch3ck', 'main', '__name__')
+  Varnames: ()

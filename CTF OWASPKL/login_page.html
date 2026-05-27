@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LIGA CTF 2026 (Student)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/f1f8f474e68507275beaaa17d69a6652/owaspmy-logo_2.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  
+
+  
+    <link rel="stylesheet" href="/themes/core/static/assets/main.40496f90.css">
+  
+
+  
+
+  <script  src="/themes/core/static/assets/color_mode_switcher.ef7861d7.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "47413a6a2a9316209595df2ef96a19abb64dccdf49a8d08acc78e361c7ff8c6f",
+          'userMode': "teams",
+          'userId': 0,
+          'userName': null,
+          'userEmail': null,
+          'userVerified': null,
+          'teamId': null,
+          'teamName': null,
+          'start': 1779451200,
+          'end': 1779638340,
+          'themeSettings': null,
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  
+</head>
+<body>
+<canvas id="appsec-canvas-bg"></canvas>
+<style>
+  #appsec-canvas-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+  }
+</style>
+<style>
+.navbar.navbar-appsec {
+  background: rgba(13, 17, 23, 0.70) !important;
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border-bottom: 1px solid rgba(0, 174, 239, 0.20);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.40);
+}
+.navbar-appsec .navbar-brand {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: var(--accent-primary) !important;
+}
+.navbar-appsec .nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: var(--text-muted) !important;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+.navbar-appsec .nav-link:hover {
+  color: var(--accent-cyan) !important;
+}
+.navbar-appsec .nav-link.active {
+  color: var(--accent-primary) !important;
+  border-bottom: 2px solid var(--accent-primary);
+}
+</style>
+<nav class="navbar navbar-expand-md navbar-dark navbar-appsec fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        <img
+            class="img-responsive ctf_logo"
+            src="/files/51e06ec0152394ed4bb1471c85327ab2/owaspmy-logo_2.png"
+            alt="LIGA CTF 2026 (Student)"
+            height="25"
+        >
+      
+    </a>
+
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              Users
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/teams">
+                Teams
+              </a>
+            </li>
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">
+              Scoreboard
+            </a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <i class="fas fa-sign-in-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-in-alt pe-1"></i>
+                Login
+              </span>
+            </a>
+          </li>
+        
+
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-language d-none d-md-inline"></i>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-language pe-1"></i>
+              Change language
+            </span>
+          </button>
+          <form x-data="LanguageForm">
+            <ul class="dropdown-menu dropdown-menu-end">
+              
+              <li>
+                  <span class="dropdown-item " @click="set" value="en">
+                    English
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="de">
+                    Deutsch
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pl">
+                    Polski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="es">
+                    Español
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ar">
+                    اَلْعَرَبِيَّةُ
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_CN">
+                    简体中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_TW">
+                    繁體中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fr">
+                    Français
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ko">
+                    한국어
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ru">
+                    русский язык
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pt_BR">
+                    Português do Brasil
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sk">
+                    Slovenský jazyk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ja">
+                    日本語
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="it">
+                    Italiano
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="vi">
+                    tiếng Việt
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ca">
+                    Català
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="el">
+                    Ελληνικά
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fi">
+                    Suomi
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ro">
+                    Română
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sl">
+                    Slovenščina
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sv">
+                    Svenska
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="he">
+                    עברית
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="uz">
+                    oʻzbekcha
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sr">
+                    Српски језик
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="no">
+                    Norsk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="hr">
+                    Hrvatski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="cs">
+                    Čeština
+                  </span>
+              </li>
+            </ul>
+          </form>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle theme">
+              <i class="fas fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-sun pe-1"></i>
+              Toggle theme
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+<style>
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 150px);
+  }
+  .auth-card {
+    width: min(420px, 92vw);
+    padding: 2.5rem 2rem;
+  }
+  .auth-heading {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: var(--accent-primary);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .auth-card .form-label, .auth-card b {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .auth-card input, .auth-card select {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(0, 174, 239, 0.20);
+    border-radius: 8px;
+    color: var(--text-primary);
+    padding: 0.65rem 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+  }
+  .auth-card input:focus, .auth-card select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.15);
+  }
+</style>
+
+<div class="container auth-container">
+  <div class="glass-card auth-card">
+    <h1 class="auth-heading">Login</h1>
+
+    <div>
+  
+
+  
+</div>
+
+    
+
+    
+      <form method="post" accept-charset="utf-8">
+        <div class="mb-3">
+          <b>
+            <label class="form-label" for="name">User Name or Email</label>
+            <span class="text-danger">*</span>
+          </b>
+          <input autocomplete="username email" autofocus class="form-control" id="name" name="name" required type="text" value="">
+        </div>
+
+        <div class="mb-3">
+          <b>
+            <label class="form-label" for="password">Password</label>
+            <span class="text-danger">*</span>
+          </b>
+          <input autocomplete="current-password" class="form-control" id="password" name="password" required type="password" value="">
+        </div>
+
+        <div class="row pt-3">
+          <div class="col-6 col-md-8">
+            <a class="align-middle" href="/reset_password">
+              Forgot your password?
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <input class="btn btn-block btn-primary-appsec w-100" id="_submit" name="_submit" type="submit" value="Submit">
+          </div>
+        </div>
+
+        <input id="nonce" name="nonce" type="hidden" value="47413a6a2a9316209595df2ef96a19abb64dccdf49a8d08acc78e361c7ff8c6f">
+      </form>
+    
+  </div>
+</div>
+
+</main>
+
+
+
+<footer class="footer">
+  <div class="container text-center">
+    <!-- Removed Powered by CTFd per requirements -->
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="module"  src="/themes/core/static/assets/index.d723c17b.js"></script><script type="module"  src="/themes/core/static/assets/page.ed7035ce.js"></script>
+
+
+
+
+
+
+<script>
+  (function() {
+    const canvas = document.getElementById('appsec-canvas-bg');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let width, height, particles;
+    const mouse = { x: -1000, y: -1000 };
+    const spacing = 45; // Grid spacing for the '+' signs
+    const plusSize = 4; // Size of the '+' sign
+
+    function init() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      particles = [];
+      
+      let cols = Math.ceil(width / spacing);
+      let rows = Math.ceil(height / spacing);
+      
+      for(let i = 0; i <= cols; i++) {
+        for(let j = 0; j <= rows; j++) {
+          particles.push({
+            baseX: i * spacing,
+            baseY: j * spacing,
+            x: i * spacing,
+            y: j * spacing,
+            vx: 0,
+            vy: 0
+          });
+        }
+      }
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, width, height);
+      
+      for(let i = 0; i < particles.length; i++) {
+        let p = particles[i];
+        
+        let dx = p.baseX - mouse.x;
+        let dy = p.baseY - mouse.y;
+        let distMouse = Math.sqrt(dx*dx + dy*dy);
+        
+        let opacity = 0.15;
+        let targetX = p.baseX;
+        let targetY = p.baseY;
+        
+        if(distMouse < 180) {
+          let force = (180 - distMouse) / 180;
+          // Pull towards mouse slightly
+          targetX = p.baseX - (dx * force * 0.15);
+          targetY = p.baseY - (dy * force * 0.15);
+          // Brighten when hovered
+          opacity = 0.15 + (force * 0.7);
+        }
+        
+        // Smoothly move to target
+        p.x += (targetX - p.x) * 0.1;
+        p.y += (targetY - p.y) * 0.1;
+        
+        // Draw '+' sign
+        ctx.strokeStyle = `rgba(255, 215, 0, ${opacity})`;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(p.x - plusSize, p.y);
+        ctx.lineTo(p.x + plusSize, p.y);
+        ctx.moveTo(p.x, p.y - plusSize);
+        ctx.lineTo(p.x, p.y + plusSize);
+        ctx.stroke();
+      }
+    }
+
+    window.addEventListener('resize', init);
+    window.addEventListener('mousemove', e => { 
+      mouse.x = e.clientX; 
+      mouse.y = e.clientY; 
+    });
+    window.addEventListener('mouseout', () => { 
+      mouse.x = -1000; 
+      mouse.y = -1000; 
+    });
+    
+    init();
+    animate();
+  })();
+</script>
+</body>
+</html>

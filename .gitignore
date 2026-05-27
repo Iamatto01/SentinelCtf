@@ -1,0 +1,12 @@
+# Ignore large binary/malware files
+CTF OWASPKL/malware.xor
+CTF OWASPKL/malware16.xor
+CTF OWASPKL/safe.exe
+CTF OWASPKL/safe2.exe
+CTF OWASPKL/upx.zip
+
+# System/IDE files
+.idea/
+.vscode/
+__pycache__/
+*.pyc

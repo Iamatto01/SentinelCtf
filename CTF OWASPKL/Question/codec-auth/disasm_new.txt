@@ -1,0 +1,1151 @@
+
+Code object: <module>
+     0 CACHE                
+     2 POP_JUMP_IF_FALSE    to L1
+     6 JUMP_BACKWARD_NO_INTERRUPT to L2
+     8 CACHE                
+    10 POP_JUMP_IF_FALSE    to L3
+    14 JUMP_BACKWARD_NO_INTERRUPT to L3
+    16 CACHE                
+    18 POP_JUMP_IF_FALSE    to L5
+    22 JUMP_BACKWARD_NO_INTERRUPT to L4
+    24 CACHE                
+    26 POP_JUMP_IF_FALSE    to L7
+    30 JUMP_BACKWARD_NO_INTERRUPT to L6
+    32 CACHE                
+    34 POP_JUMP_IF_FALSE    to L9
+    38 JUMP_BACKWARD_NO_INTERRUPT to L8
+    40 CACHE                
+    42 POP_JUMP_IF_FALSE    to L10
+    46 JUMP_BACKWARD_NO_INTERRUPT to L9
+    48 CACHE                
+  [Error during disassembly: tuple index out of range]
+
+  Code object: _ah
+       0 CACHE                
+       2 LOAD_FROM_DICT_OR_GLOBALS bytes
+       4 MAP_ADD              
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 CACHE                
+      14 BUILD_SLICE          
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _hw
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _decode_lore
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 LOAD_FAST_AND_CLEAR  enc
+      14 MAKE_FUNCTION        
+      16 LOAD_FROM_DICT_OR_GLOBALS bytes
+      18 GET_ITER             
+      20 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+      22 CACHE                
+      24 CACHE                
+      26 CACHE                
+      28 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: _foxhound_aes_gcm_auth
+       0 CACHE                
+       2 POP_JUMP_IF_FALSE    to L1
+       6 POP_JUMP_IF_FALSE    to L2
+      10 MAP_ADD              
+      12 CACHE                
+      14 CACHE                
+      16 CACHE                
+      18 CACHE                
+      20 BUILD_SLICE          
+      22 POP_JUMP_IF_FALSE    to L5
+      26 POP_JUMP_IF_FALSE    to L8
+      30 POP_JUMP_IF_FALSE    to L13
+      34 POP_JUMP_IF_FALSE    to L6
+      38 POP_JUMP_IF_FALSE    to L11
+      42 POP_JUMP_IF_FALSE    to L15
+      46 POP_JUMP_IF_FALSE    to L12
+      50 POP_JUMP_IF_FALSE    to L9
+      54 POP_JUMP_IF_FALSE    to L3
+      58 POP_JUMP_IF_FALSE    to L10
+      62 POP_JUMP_IF_FALSE    to L16
+      66 POP_JUMP_IF_FALSE    to L12
+      70 POP_JUMP_IF_FALSE    to L14
+      74 POP_JUMP_IF_FALSE    to L14
+      78 POP_JUMP_IF_FALSE    to L4
+      82 POP_JUMP_IF_FALSE    to L15
+      86 POP_JUMP_IF_FALSE    to L30
+      90 POP_JUMP_IF_FALSE    to L26
+      94 POP_JUMP_IF_FALSE    to L31
+      98 POP_JUMP_IF_FALSE    to L35
+     102 POP_JUMP_IF_FALSE    to L34
+     106 POP_JUMP_IF_FALSE    to L32
+     110 POP_JUMP_IF_FALSE    to L35
+     114 POP_JUMP_IF_FALSE    to L18
+     118 POP_JUMP_IF_FALSE    to L7
+     122 POP_JUMP_IF_FALSE    to L22
+     126 POP_JUMP_IF_FALSE    to L24
+     130 POP_JUMP_IF_FALSE    to L29
+     134 POP_JUMP_IF_FALSE    to L17
+     138 POP_JUMP_IF_FALSE    to L19
+     142 POP_JUMP_IF_FALSE    to L21
+     146 POP_JUMP_IF_FALSE    to L23
+     150 POP_JUMP_IF_FALSE    to L20
+     154 POP_JUMP_IF_FALSE    to L29
+     158 POP_JUMP_IF_FALSE    to L28
+     162 POP_JUMP_IF_FALSE    to L32
+     166 POP_JUMP_IF_FALSE    to L18
+     170 POP_JUMP_IF_FALSE    to L40
+     174 POP_JUMP_IF_FALSE    to L48
+     178 POP_JUMP_IF_FALSE    to L49
+     182 POP_JUMP_IF_FALSE    to L46
+     186 POP_JUMP_IF_FALSE    to L48
+     190 POP_JUMP_IF_FALSE    to L55
+     194 POP_JUMP_IF_FALSE    to L54
+     198 POP_JUMP_IF_FALSE    to L50
+     202 POP_JUMP_IF_FALSE    to L51
+     206 POP_JUMP_IF_FALSE    to L25
+     210 POP_JUMP_IF_FALSE    to L62
+     214 POP_JUMP_IF_FALSE    to L57
+     218 POP_JUMP_IF_FALSE    to L54
+     222 POP_JUMP_IF_FALSE    to L27
+     226 POP_JUMP_IF_FALSE    to L45
+     230 POP_JUMP_IF_FALSE    to L43
+     234 POP_JUMP_IF_FALSE    to L50
+     238 POP_JUMP_IF_FALSE    to L52
+     242 POP_JUMP_IF_FALSE    to L30
+     246 POP_JUMP_IF_FALSE    to L54
+     250 POP_JUMP_IF_FALSE    to L53
+     254 POP_JUMP_IF_FALSE    to L33
+     258 POP_JUMP_IF_FALSE    to L41
+     262 POP_JUMP_IF_FALSE    to L37
+     266 POP_JUMP_IF_FALSE    to L39
+     270 POP_JUMP_IF_FALSE    to L38
+     274 POP_JUMP_IF_FALSE    to L43
+     278 POP_JUMP_IF_FALSE    to L47
+     282 POP_JUMP_IF_FALSE    to L55
+     286 POP_JUMP_IF_FALSE    to L44
+     290 POP_JUMP_IF_FALSE    to L36
+     294 POP_JUMP_IF_FALSE    to L61
+     298 POP_JUMP_IF_FALSE    to L59
+     302 POP_JUMP_IF_FALSE    to L60
+     306 POP_JUMP_IF_FALSE    to L56
+     310 POP_JUMP_IF_FALSE    to L42
+     314 POP_JUMP_IF_FALSE    to L71
+     318 POP_JUMP_IF_FALSE    to L63
+     322 POP_JUMP_IF_FALSE    to L70
+     326 POP_JUMP_IF_FALSE    to L67
+     330 POP_JUMP_IF_FALSE    to L69
+     334 POP_JUMP_IF_FALSE    to L59
+     338 POP_JUMP_IF_FALSE    to L58
+     342 POP_JUMP_IF_FALSE    to L78
+     346 POP_JUMP_IF_FALSE    to L76
+     350 POP_JUMP_IF_FALSE    to L73
+     354 POP_JUMP_IF_FALSE    to L66
+     358 POP_JUMP_IF_FALSE    to L65
+     362 POP_JUMP_IF_FALSE    to L67
+     366 POP_JUMP_IF_FALSE    to L64
+     370 POP_JUMP_IF_FALSE    to L59
+     374 POP_JUMP_IF_FALSE    to L70
+     378 POP_JUMP_IF_FALSE    to L71
+     382 POP_JUMP_IF_FALSE    to L72
+     386 POP_JUMP_IF_FALSE    to L74
+     390 POP_JUMP_IF_FALSE    to L75
+     394 POP_JUMP_IF_FALSE    to L76
+     398 POP_JUMP_IF_FALSE    to L77
+     402 POP_JUMP_IF_FALSE    to L68
+     406 POP_JUMP_IF_FALSE    to L83
+     410 POP_JUMP_IF_FALSE    to L86
+     414 POP_JUMP_IF_FALSE    to L83
+     418 POP_JUMP_IF_FALSE    to L87
+     422 POP_JUMP_IF_FALSE    to L83
+     426 POP_JUMP_IF_FALSE    to L92
+     430 POP_JUMP_IF_FALSE    to L85
+     434 POP_JUMP_IF_FALSE    to L91
+     438 POP_JUMP_IF_FALSE    to L92
+     442 POP_JUMP_IF_FALSE    to L93
+     446 POP_JUMP_IF_FALSE    to L80
+     450 POP_JUMP_IF_FALSE    to L79
+     454 POP_JUMP_IF_FALSE    to L82
+     458 POP_JUMP_IF_FALSE    to L94
+     462 POP_JUMP_IF_FALSE    to L91
+     466 POP_JUMP_IF_FALSE    to L93
+     470 POP_JUMP_IF_FALSE    to L81
+     474 POP_JUMP_IF_FALSE    to L80
+     478 POP_JUMP_IF_FALSE    to L84
+     482 POP_JUMP_IF_FALSE    to L91
+     486 POP_JUMP_IF_FALSE    to L83
+     490 POP_JUMP_IF_FALSE    to L91
+     494 POP_JUMP_IF_FALSE    to L90
+     498 POP_JUMP_IF_FALSE    to L88
+     502 POP_JUMP_IF_FALSE    to L90
+     506 POP_JUMP_IF_FALSE    to L105
+     510 POP_JUMP_IF_FALSE    to L95
+     514 POP_JUMP_IF_FALSE    to L98
+     518 POP_JUMP_IF_FALSE    to L104
+     522 POP_JUMP_IF_FALSE    to L97
+     526 POP_JUMP_IF_FALSE    to L101
+     530 POP_JUMP_IF_FALSE    to L99
+     534 POP_JUMP_IF_FALSE    to L105
+     538 POP_JUMP_IF_FALSE    to L99
+     542 POP_JUMP_IF_FALSE    to L86
+     546 POP_JUMP_IF_FALSE    to L89
+     550 POP_JUMP_IF_FALSE    to L92
+     554 POP_JUMP_IF_FALSE    to L103
+     558 POP_JUMP_IF_FALSE    to L106
+     562 POP_JUMP_IF_FALSE    to L111
+     566 POP_JUMP_IF_FALSE    to L118
+     570 POP_JUMP_IF_FALSE    to L108
+     574 POP_JUMP_IF_FALSE    to L115
+     578 POP_JUMP_IF_FALSE    to L120
+     582 POP_JUMP_IF_FALSE    to L116
+     586 POP_JUMP_IF_FALSE    to L112
+     590 POP_JUMP_IF_FALSE    to L109
+     594 POP_JUMP_IF_FALSE    to L113
+     598 POP_JUMP_IF_FALSE    to L121
+     602 POP_JUMP_IF_FALSE    to L116
+     606 POP_JUMP_IF_FALSE    to L119
+     610 POP_JUMP_IF_FALSE    to L119
+     614 POP_JUMP_IF_FALSE    to L117
+     618 POP_JUMP_IF_FALSE    to L120
+     622 POP_JUMP_IF_FALSE    to L125
+     626 POP_JUMP_IF_FALSE    to L126
+     630 POP_JUMP_IF_FALSE    to L123
+     634 POP_JUMP_IF_FALSE    to L131
+     638 POP_JUMP_IF_FALSE    to L100
+     642 POP_JUMP_IF_FALSE    to L96
+     646 POP_JUMP_IF_FALSE    to L107
+     650 POP_JUMP_IF_FALSE    to L127
+     654 POP_JUMP_IF_FALSE    to L124
+     658 POP_JUMP_IF_FALSE    to L128
+     662 POP_JUMP_IF_FALSE    to L133
+     666 POP_JUMP_IF_FALSE    to L132
+     670 POP_JUMP_IF_FALSE    to L130
+     674 POP_JUMP_IF_FALSE    to L133
+     678 POP_JUMP_IF_FALSE    to L102
+     682 POP_JUMP_IF_FALSE    to L130
+     686 POP_JUMP_IF_FALSE    to L135
+     690 POP_JUMP_IF_FALSE    to L135
+     694 POP_JUMP_IF_FALSE    to L138
+     698 POP_JUMP_IF_FALSE    to L137
+     702 POP_JUMP_IF_FALSE    to L133
+     706 POP_JUMP_IF_FALSE    to L139
+     710 POP_JUMP_IF_FALSE    to L136
+     714 POP_JUMP_IF_FALSE    to L118
+     718 POP_JUMP_IF_FALSE    to L110
+     722 POP_JUMP_IF_FALSE    to L129
+     726 POP_JUMP_IF_FALSE    to L140
+     730 POP_JUMP_IF_FALSE    to L114
+     734 POP_JUMP_IF_FALSE    to L139
+     738 POP_JUMP_IF_FALSE    to L145
+     742 POP_JUMP_IF_FALSE    to L144
+     746 POP_JUMP_IF_FALSE    to L146
+     750 POP_JUMP_IF_FALSE    to L142
+     754 POP_JUMP_IF_FALSE    to L141
+     758 POP_JUMP_IF_FALSE    to L148
+     762 POP_JUMP_IF_FALSE    to L122
+     766 POP_JUMP_IF_FALSE    to L150
+     770 POP_JUMP_IF_FALSE    to L145
+     774 POP_JUMP_IF_FALSE    to L152
+     778 POP_JUMP_IF_FALSE    to L147
+     782 POP_JUMP_IF_FALSE    to L152
+     786 POP_JUMP_IF_FALSE    to L154
+     790 POP_JUMP_IF_FALSE    to L149
+     794 POP_JUMP_IF_FALSE    to L126
+     798 POP_JUMP_IF_FALSE    to L151
+     802 POP_JUMP_IF_FALSE    to L156
+     806 POP_JUMP_IF_FALSE    to L153
+     810 POP_JUMP_IF_FALSE    to L155
+     814 POP_JUMP_IF_FALSE    to L159
+     818 POP_JUMP_IF_FALSE    to L155
+     822 POP_JUMP_IF_FALSE    to L157
+     826 POP_JUMP_IF_FALSE    to L163
+     830 POP_JUMP_IF_FALSE    to L160
+     834 POP_JUMP_IF_FALSE    to L163
+     838 POP_JUMP_IF_FALSE    to L161
+     842 POP_JUMP_IF_FALSE    to L134
+     846 POP_JUMP_IF_FALSE    to L167
+     850 POP_JUMP_IF_FALSE    to L162
+     854 POP_JUMP_IF_FALSE    to L164
+     858 POP_JUMP_IF_FALSE    to L165
+     862 POP_JUMP_IF_FALSE    to L166
+     866 POP_JUMP_IF_FALSE    to L167
+     870 POP_JUMP_IF_FALSE    to L143
+     874 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+     876 CACHE                
+     878 CACHE                
+     880 CACHE                
+     882 LOAD_DEREF           tag
+     884 CACHE                
+     886 CACHE                
+     888 CACHE                
+     890 CACHE                
+     892 CACHE                
+     894 CACHE                
+     896 CACHE                
+     898 CACHE                
+     900 CACHE                
+     902 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+     904 CACHE                
+     906 CACHE                
+     908 CACHE                
+     910 SWAP                 
+     912 MAP_ADD              
+     914 CACHE                
+     916 CACHE                
+     918 CACHE                
+     920 CACHE                
+     922 LOAD_FROM_DICT_OR_GLOBALS bytes
+     924 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+     926 CACHE                
+     928 CACHE                
+     930 CACHE                
+     932 POP_JUMP_IF_FALSE    to L140
+     936 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: foxhound_codec_encrypt
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 LOAD_DEREF           frequency
+      14 CACHE                
+      16 CACHE                
+      18 CACHE                
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 CACHE                
+      28 CACHE                
+      30 CACHE                
+      32 RETURN_VALUE         
+      34 LOAD_FROM_DICT_OR_GLOBALS encode
+    [Error during disassembly: tuple index out of range]
+
+  Code object: foxhound_frequency_lock
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _play_calling_animation
+       0 CACHE                
+       2 POP_JUMP_IF_FALSE    to L3
+       6 POP_JUMP_IF_FALSE    to L2
+      10 POP_JUMP_IF_FALSE    to L1
+      14 LOAD_FAST_AND_CLEAR  FRAME_LINES
+      16 SWAP                 
+      18 MAP_ADD              
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 CACHE                
+      28 LOAD_DEREF           HEADER_LINES
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 CACHE                
+      40 CACHE                
+      42 CACHE                
+      44 CACHE                
+      46 CACHE                
+      48 LOAD_DEREF           frame
+      50 CACHE                
+      52 CACHE                
+      54 CACHE                
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 CACHE                
+      66 CACHE                
+      68 MAP_ADD              
+      70 CACHE                
+      72 CACHE                
+      74 CACHE                
+      76 CACHE                
+      78 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      80 CACHE                
+      82 CACHE                
+      84 CACHE                
+      86 PUSH_NULL            
+      88 MAP_ADD              
+      90 CACHE                
+      92 CACHE                
+      94 CACHE                
+      96 CACHE                
+      98 LOAD_DEREF           HEADER_LINES
+     100 CACHE                
+     102 CACHE                
+     104 CACHE                
+     106 CACHE                
+     108 CACHE                
+     110 CACHE                
+     112 CACHE                
+     114 CACHE                
+     116 CACHE                
+     118 LOAD_DEREF           bar
+     120 CACHE                
+     122 CACHE                
+     124 CACHE                
+     126 CACHE                
+     128 CACHE                
+     130 CACHE                
+     132 CACHE                
+     134 CACHE                
+     136 CACHE                
+     138 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+     140 CACHE                
+     142 CACHE                
+     144 CACHE                
+     146 PUSH_NULL            
+     148 MAP_ADD              
+     150 CACHE                
+     152 CACHE                
+     154 CACHE                
+     156 CACHE                
+     158 LOAD_FROM_DICT_OR_GLOBALS sys
+     160 POP_JUMP_IF_FALSE    to L4
+     164 CACHE                
+     166 CACHE                
+     168 CACHE                
+     170 CACHE                
+     172 CACHE                
+     174 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+     176 CACHE                
+     178 CACHE                
+     180 CACHE                
+     182 GET_ITER             
+     184 IMPORT_FROM          stdout
+    [Error during disassembly: tuple index out of range]
+
+  Code object: codec_frequency_init_display
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+      14 CACHE                
+      16 CACHE                
+      18 CACHE                
+      20 PUSH_NULL            
+      22 MAP_ADD              
+      24 CACHE                
+      26 CACHE                
+      28 CACHE                
+      30 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: foxhound_print_help
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+      14 CACHE                
+      16 CACHE                
+      18 CACHE                
+      20 PUSH_NULL            
+      22 MAP_ADD              
+      24 CACHE                
+      26 CACHE                
+      28 CACHE                
+      30 CACHE                
+      32 BUILD_SLICE          
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _CodecAuthLayer
+       0 POP_JUMP_IF_TRUE     to L1
+       4 MATCH_CLASS          
+       6 CACHE                
+       8 LOAD_FAST_AND_CLEAR  __classdict__
+      10 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+    Code object: __call__
+         0 CACHE                
+         2 MAP_ADD              
+         4 CACHE                
+         6 CACHE                
+         8 CACHE                
+        10 CACHE                
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+       2 LOAD_FROM_DICT_OR_GLOBALS int
+       4 POP_JUMP_IF_FALSE    to L1
+       8 CACHE                
+      10 RETURN_CONST         'rounds'
+      12 CACHE                
+      14 POP_EXCEPT           
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _k3y_d3r1v
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _p1
+      16 LOAD_CONST           <code object <genexpr> at 0x00000236E7415020, file "/opt/outer-heaven/codec.py", line 472>
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 SWAP                 
+      28 MAP_ADD              
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 BUILD_SLICE          
+      40 LOAD_FAST_AND_CLEAR  _p2
+      42 LOAD_CONST           <code object <genexpr> at 0x00000236E7415020, file "/opt/outer-heaven/codec.py", line 472>
+      44 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      46 CACHE                
+      48 CACHE                
+      50 CACHE                
+      52 SWAP                 
+      54 MAP_ADD              
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 DELETE_ATTR          tuple
+      66 LOAD_FAST            _p0
+      68 JUMP_FORWARD         to L1
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+       2 LOAD_FROM_DICT_OR_GLOBALS int
+       4 POP_JUMP_IF_FALSE    to L1
+       8 CACHE                
+      10 RETURN_CONST         'rc'
+      12 CACHE                
+      14 POP_EXCEPT           
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _r0und_k3y
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _p2
+      16 LOAD_CONST           <code object <genexpr> at 0x00000236E7416780, file "/opt/outer-heaven/codec.py", line 483>
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 SWAP                 
+      28 MAP_ADD              
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 BUILD_SLICE          
+      40 LOAD_FAST_AND_CLEAR  _raw
+      42 LOAD_CONST           <code object <genexpr> at 0x00000236E7416780, file "/opt/outer-heaven/codec.py", line 483>
+      44 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      46 CACHE                
+      48 CACHE                
+      50 CACHE                
+      52 SWAP                 
+      54 MAP_ADD              
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 DELETE_ATTR          tuple
+      66 LOAD_FAST            _p0
+      68 JUMP_FORWARD         to L1
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _c1ph_rnd
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _b2
+      16 LOAD_CONST           <code object <genexpr> at 0x00000236E7416890, file "/opt/outer-heaven/codec.py", line 495>
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 SWAP                 
+      28 MAP_ADD              
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 BUILD_SLICE          
+      40 LOAD_FAST_AND_CLEAR  b
+      42 LOAD_CONST           <code object <genexpr> at 0x00000236E7416890, file "/opt/outer-heaven/codec.py", line 495>
+      44 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      46 CACHE                
+      48 CACHE                
+      50 CACHE                
+      52 SWAP                 
+      54 MAP_ADD              
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 DELETE_ATTR          tuple
+      66 LOAD_FAST            _b0
+      68 JUMP_FORWARD         to L1
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _bl0ck_x0r
+       0 POP_JUMP_IF_TRUE     to L1
+       4 POP_JUMP_IF_TRUE     to L2
+       8 MAP_ADD              
+      10 CACHE                
+      12 CACHE                
+      14 CACHE                
+      16 CACHE                
+      18 BUILD_SLICE          
+      20 LOAD_FAST_AND_CLEAR  _p1
+      22 LOAD_CONST           <code object <genexpr> at 0x00000236E74169A0, file "/opt/outer-heaven/codec.py", line 539>
+      24 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      26 CACHE                
+      28 CACHE                
+      30 CACHE                
+      32 SWAP                 
+      34 MAP_ADD              
+      36 CACHE                
+      38 CACHE                
+      40 CACHE                
+      42 CACHE                
+      44 BUILD_SLICE          
+      46 LOAD_FAST_AND_CLEAR  _n
+      48 LOAD_CONST           <code object <genexpr> at 0x00000236E74169A0, file "/opt/outer-heaven/codec.py", line 539>
+      50 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      52 CACHE                
+      54 CACHE                
+      56 CACHE                
+      58 SWAP                 
+      60 MAP_ADD              
+      62 CACHE                
+      64 CACHE                
+      66 CACHE                
+      68 CACHE                
+      70 DELETE_ATTR          tuple
+      72 LOAD_FAST            _p0
+      74 JUMP_FORWARD         to L3
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         a
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _t0k3n_p4d
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _nd0
+      16 LOAD_CONST           <code object <genexpr> at 0x00000236E7416AB0, file "/opt/outer-heaven/codec.py", line 546>
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 SWAP                 
+      28 MAP_ADD              
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 BUILD_SLICE          
+      40 LOAD_FAST_AND_CLEAR  _elen
+      42 LOAD_CONST           <code object <genexpr> at 0x00000236E7416AB0, file "/opt/outer-heaven/codec.py", line 546>
+      44 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      46 CACHE                
+      48 CACHE                
+      50 CACHE                
+      52 SWAP                 
+      54 MAP_ADD              
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 DELETE_ATTR          tuple
+      66 LOAD_FAST            _p1
+      68 JUMP_FORWARD         to L1
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _fr3q_l0ck
+       0 POP_JUMP_IF_TRUE     to L1
+       4 POP_JUMP_IF_TRUE     to L2
+       8 POP_JUMP_IF_TRUE     to L3
+      12 POP_JUMP_IF_TRUE     to L4
+      16 POP_JUMP_IF_TRUE     to L5
+      20 POP_JUMP_IF_FALSE    to L6
+      24 MAP_ADD              
+      26 CACHE                
+      28 CACHE                
+      30 CACHE                
+      32 CACHE                
+      34 LOAD_FROM_DICT_OR_GLOBALS len
+      36 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      38 CACHE                
+      40 CACHE                
+      42 CACHE                
+      44 LOAD_FROM_DICT_OR_GLOBALS bytes
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _p2
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _kx
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _r1
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _r3
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _bm
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _h4sh_v3r1f
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _p1
+      16 LOAD_CONST           <code object <genexpr> at 0x00000236E7416CD0, file "/opt/outer-heaven/codec.py", line 627>
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 SWAP                 
+      28 MAP_ADD              
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 BUILD_SLICE          
+      40 LOAD_FAST_AND_CLEAR  _p2
+      42 LOAD_CONST           <code object <genexpr> at 0x00000236E7416CD0, file "/opt/outer-heaven/codec.py", line 627>
+      44 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      46 CACHE                
+      48 CACHE                
+      50 CACHE                
+      52 SWAP                 
+      54 MAP_ADD              
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 DELETE_ATTR          tuple
+      66 LOAD_FAST            _p0
+      68 JUMP_FORWARD         to L1
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _s3q_v3r
+       0 POP_JUMP_IF_TRUE     to L1
+       4 CACHE                
+       6 MAP_ADD              
+       8 CACHE                
+      10 CACHE                
+      12 CACHE                
+      14 CACHE                
+      16 BUILD_SLICE          
+      18 LOAD_FAST_AND_CLEAR  _k1
+      20 LOAD_CONST           <code object <genexpr> at 0x00000236E7416DE0, file "/opt/outer-heaven/codec.py", line 638>
+      22 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      24 CACHE                
+      26 CACHE                
+      28 CACHE                
+      30 SWAP                 
+      32 MAP_ADD              
+      34 CACHE                
+      36 CACHE                
+      38 CACHE                
+      40 CACHE                
+      42 BUILD_SLICE          
+      44 LOAD_FAST_AND_CLEAR  _q0
+      46 LOAD_CONST           <code object <genexpr> at 0x00000236E7416DE0, file "/opt/outer-heaven/codec.py", line 638>
+      48 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      50 CACHE                
+      52 CACHE                
+      54 CACHE                
+      56 SWAP                 
+      58 MAP_ADD              
+      60 CACHE                
+      62 CACHE                
+      64 CACHE                
+      66 CACHE                
+      68 DELETE_ATTR          tuple
+      70 LOAD_FAST            _p1x
+      72 JUMP_FORWARD         to L2
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _p2x
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: __annotate__
+       0 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _p4d_ch3ck
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _nd1
+      16 LOAD_CONST           slice(None, 8, None)
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 SWAP                 
+      28 MAP_ADD              
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 BUILD_SLICE          
+      40 LOAD_FAST_AND_CLEAR  _dk
+      42 LOAD_CONST           slice(None, 8, None)
+      44 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      46 CACHE                
+      48 CACHE                
+      50 CACHE                
+      52 SWAP                 
+      54 MAP_ADD              
+      56 CACHE                
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 LOAD_FROM_DICT_OR_GLOBALS bytes
+      66 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      68 CACHE                
+      70 CACHE                
+      72 CACHE                
+      74 SWAP                 
+      76 MAP_ADD              
+      78 CACHE                
+      80 CACHE                
+      82 CACHE                
+      84 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _check_format
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 BUILD_SLICE          
+      14 LOAD_FAST_AND_CLEAR  _sfx
+      16 LOAD_CONST           True
+      18 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 LOAD_DEREF           body
+      28 CACHE                
+      30 CACHE                
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 CACHE                
+      40 CACHE                
+      42 CACHE                
+      44 CACHE                
+      46 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+      48 CACHE                
+      50 CACHE                
+      52 CACHE                
+      54 SWAP                 
+      56 MAP_ADD              
+      58 CACHE                
+      60 CACHE                
+      62 CACHE                
+      64 CACHE                
+      66 POP_JUMP_IF_FALSE    to L1
+      70 CALL_INTRINSIC_2     INTRINSIC_PREP_RERAISE_STAR
+      72 CACHE                
+      74 CACHE                
+      76 CACHE                
+      78 LOAD_DEREF           body
+      80 CACHE                
+      82 CACHE                
+      84 CACHE                
+      86 CACHE                
+      88 CACHE                
+      90 CACHE                
+      92 CACHE                
+      94 CACHE                
+      96 CACHE                
+      98 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+     100 CACHE                
+     102 CACHE                
+     104 CACHE                
+     106 SWAP                 
+     108 LOAD_FROM_DICT_OR_GLOBALS bytes
+    [Error during disassembly: tuple index out of range]
+
+  Code object: _init_codec
+       0 POP_JUMP_IF_TRUE     to L1
+       4 MAP_ADD              
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 CACHE                
+      14 POP_JUMP_IF_FALSE    to L2
+      18 CACHE                
+      20 CACHE                
+      22 CACHE                
+      24 CACHE                
+      26 CACHE                
+      28 YIELD_VALUE          
+      30 MAP_ADD              
+      32 CACHE                
+      34 CACHE                
+      36 CACHE                
+      38 CACHE                
+      40 MAP_ADD              
+      42 CACHE                
+      44 CACHE                
+      46 CACHE                
+      48 CACHE                
+      50 MAP_ADD              
+      52 CACHE                
+      54 CACHE                
+      56 CACHE                
+      58 CACHE                
+      60 BUILD_SLICE          
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 DELETE_DEREF         _i
+         2 SETUP_ANNOTATIONS    
+         4 PUSH_NULL            
+         6 CACHE                
+         8 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+  Code object: _4uth_ch3ck
+       0 CACHE                
+       2 POP_JUMP_IF_FALSE    to L9
+       6 LOAD_FAST_AND_CLEAR  _state
+       8 SWAP                 
+      10 NOP                  
+      12 LOAD_FROM_DICT_OR_GLOBALS len
+      14 POP_JUMP_IF_FALSE    to L10
+      18 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+  Code object: main
+       0 CACHE                
+       2 MAP_ADD              
+       4 CACHE                
+       6 CACHE                
+       8 CACHE                
+      10 CACHE                
+      12 CALL_INTRINSIC_2     INTRINSIC_2_INVALID
+      14 CACHE                
+      16 CACHE                
+      18 CACHE                
+      20 PUSH_NULL            
+      22 MAP_ADD              
+      24 CACHE                
+      26 CACHE                
+      28 CACHE                
+      30 CACHE                
+      32 MAP_ADD              
+      34 CACHE                
+      36 CACHE                
+      38 CACHE                
+      40 CACHE                
+    [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]
+
+    Code object: <genexpr>
+         0 SETUP_ANNOTATIONS    
+         2 PUSH_NULL            
+         4 CACHE                
+         6 LOAD_FAST_LOAD_FAST  .0, .0
+      [Error during disassembly: tuple index out of range]

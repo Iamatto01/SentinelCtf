@@ -1,0 +1,16 @@
+hey,
+
+so i've been learning cryptography lately and honestly it's really cool.
+i made this little program that locks a secret message inside a binary.
+
+i used THREE layers of protection
+
+there's literally no way to get the message out without the proper unlock code.
+the only way in is --unlock, and you'd need my 64-character HMAC key for that.
+
+i'm attaching the binary. try to get the message if you think you're so smart lol
+i bet you can't.
+
+– AcekiraSecond
+
+p.s. i even checked with strings and nothing useful showed up. i'm a genius

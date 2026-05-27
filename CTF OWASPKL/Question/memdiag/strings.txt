@@ -1,0 +1,93 @@
+0x4014a0: qRm!l7`ݏ<Rm![/Hݏ<RPc!7Hݏ<R:n
+
+0x401510: <Rm!Z7H
+
+0x401528: diagnostic marker accepted
+
+0x401550: _SfiTE
+
+0x401570: vH$
+
+0x40158b: 
+
+0x401598: y@
+
+0x4015b0: KY^cPANu-5Oר
+
+0x4015d0: j
+
+0x4015f0: [host-memdiag] entering memory diagnostics...
+
+0x401620: [host-memdiag] cached maintenance tag: %s
+
+0x401650: [host-memdiag] last-known valid seal : %s
+
+0x401680: [host-memdiag] fixture signature     : %s
+
+0x4016b0: [host-memdiag] diagnostics completed.
+
+0x4016e0: [host-memdiag] environment check failed, falling back to default diagnostics
+
+0x40172d: default_scan
+
+0x40173a: ./memdiag_dump.bmp
+
+0x401750: [host-memdiag] snapshot write failed
+
+0x401778: [host-memdiag] diagnostic snapshot saved
+
+0x4017a8: [host-memdiag] embedded telemetry blob ready (%zu bytes)
+
+0x4017e8: [host-memdiag] maintenance profile mismatch
+
+0x400590:	mov	edi, 0x401528
+
+0x400638:	add	rax, 0x401550
+
+0x40067c:	add	rax, 0x401570
+
+0x4006cc:	mov	edx, 0x4015e5
+
+0x40072f:	add	rax, 0x401588
+
+0x400773:	add	rax, 0x401598
+
+0x4007c3:	mov	edx, 0x4015e5
+
+0x400836:	add	rax, 0x4015b0
+
+0x40087a:	add	rax, 0x4015d0
+
+0x4008c6:	mov	edx, 0x4015e5
+
+0x4008ea:	mov	edi, 0x4015f0
+
+0x40091e:	mov	edi, 0x401620
+
+0x400945:	mov	edi, 0x401650
+
+0x40096e:	mov	edi, 0x401680
+
+0x400982:	mov	edi, 0x4016b0
+
+0x400aca:	mov	esi, 0x4016d6
+
+0x400afa:	add	rax, 0x4014a0
+
+0x400b17:	movzx	eax, byte ptr [rax + 0x401510]
+
+0x400b91:	mov	edi, 0x4016e0
+
+0x400ba0:	mov	edi, 0x40172d
+
+0x400bac:	mov	edi, 0x40173a
+
+0x400bba:	mov	edi, 0x401750
+
+0x400bc6:	mov	edi, 0x401778
+
+0x400be8:	mov	edi, 0x4017a8
+
+0x400cb4:	mov	edi, 0x4017e8
+
+0x400cea:	mov	edi, 0x40172d

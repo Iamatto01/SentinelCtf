@@ -1,0 +1,3 @@
+Beep. Beep. Boop. It's the age of robots now! Let's see if you can overcome the simplest aspect of our very own creation!
+
+Flag Format: OWASPKL{xxx}

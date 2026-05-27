@@ -1,0 +1,58 @@
+Disassembly of <code object _check_format at 0x000002B3D95B68E0, file "/opt/outer-heaven/codec.py", line 667>:
+667           RESUME                   0
+
+669           LOAD_GLOBAL              1 (bytes + NULL)
+              BUILD_LIST               0
+              LOAD_CONST               2 ((79, 87, 65, 83, 80, 75, 76, 123))
+              LIST_EXTEND              1
+              CALL                     1
+              LOAD_ATTR                3 (decode + NULL|self)
+              CALL                     0
+              STORE_FAST               1 (_pfx)
+
+670           LOAD_GLOBAL              1 (bytes + NULL)
+              LOAD_SMALL_INT         125
+              BUILD_LIST               1
+              CALL                     1
+              LOAD_ATTR                3 (decode + NULL|self)
+              CALL                     0
+              STORE_FAST               2 (_sfx)
+
+671           LOAD_FAST_BORROW         0 (candidate)
+              LOAD_ATTR                5 (startswith + NULL|self)
+              LOAD_FAST_BORROW         1 (_pfx)
+              CALL                     1
+              TO_BOOL
+              POP_JUMP_IF_FALSE       24 (to L1)
+              NOT_TAKEN
+              LOAD_FAST_BORROW         0 (candidate)
+              LOAD_ATTR                7 (endswith + NULL|self)
+              LOAD_FAST_BORROW         2 (_sfx)
+              CALL                     1
+              TO_BOOL
+              POP_JUMP_IF_TRUE         3 (to L2)
+              NOT_TAKEN
+
+672   L1:     LOAD_CONST               3 ((False, ''))
+              RETURN_VALUE
+
+673   L2:     LOAD_FAST_BORROW         0 (candidate)
+              LOAD_GLOBAL              9 (len + NULL)
+              LOAD_FAST_BORROW         1 (_pfx)
+              CALL                     1
+              LOAD_CONST               4 (-1)
+              BINARY_SLICE
+              STORE_FAST               3 (body)
+
+674           LOAD_GLOBAL             10 (_entropy)
+              LOAD_GLOBAL              9 (len + NULL)
+              LOAD_FAST_BORROW         3 (body)
+              CALL                     1
+              BINARY_OP               13 (+=)
+              STORE_GLOBAL             5 (_entropy)
+
+675           LOAD_CONST               1 (True)
+              LOAD_FAST_BORROW         3 (body)
+              BUILD_TUPLE              2
+              RETURN_VALUE
+

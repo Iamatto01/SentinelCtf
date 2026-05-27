@@ -1,0 +1,5 @@
+You are given a stripped 64‑bit ELF deadlocker and the address of a remote server. The deadlocker contacts the server, receives an encrypted flag, and decrypts it locally. Your task is to reverse‑engineer the binary, understand the cryptographic operations, and write your own client to fetch and decrypt the flag.
+
+Server: lockbox.appsecmy.com 9999
+
+Flag format: OWASPKL{...}

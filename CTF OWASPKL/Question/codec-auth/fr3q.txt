@@ -1,0 +1,737 @@
+Disassembly of <code object _fr3q_l0ck at 0x000002B3D989C0E0, file "/opt/outer-heaven/codec.py", line 558>:
+  --            MAKE_CELL               31 (_bm)
+                MAKE_CELL               32 (_kx)
+                MAKE_CELL               33 (_p2)
+                MAKE_CELL               34 (_q2)
+                MAKE_CELL               35 (_r1)
+                MAKE_CELL               36 (_r3)
+                MAKE_CELL               37 (_rm)
+                MAKE_CELL               38 (_sm)
+                MAKE_CELL               39 (_sx)
+
+ 558            RESUME                   0
+
+ 559            LOAD_SMALL_INT          59
+                STORE_FAST               1 (_elen)
+
+ 560            LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST_BORROW         0 (body)
+                CALL                     1
+                LOAD_FAST_BORROW         1 (_elen)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE        3 (to L1)
+                NOT_TAKEN
+
+ 561            LOAD_CONST               1 (False)
+                RETURN_VALUE
+
+ 562    L1:     LOAD_SMALL_INT          95
+                LOAD_SMALL_INT          60
+                STORE_FAST_STORE_FAST   50 (_z1, _z0)
+
+ 563            LOAD_FAST_BORROW_LOAD_FAST_BORROW 35 (_z0, _z1)
+                BINARY_OP                7 (|)
+                LOAD_FAST_BORROW_LOAD_FAST_BORROW 35 (_z0, _z1)
+                BINARY_OP                1 (&)
+                BINARY_OP                0 (+)
+                LOAD_FAST_BORROW_LOAD_FAST_BORROW 35 (_z0, _z1)
+                BINARY_OP                0 (+)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE       14 (to L2)
+                NOT_TAKEN
+
+ 564            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              12 ((240, 154, 60, 17))
+                LIST_EXTEND              1
+                CALL                     1
+                RETURN_VALUE
+
+ 565    L2:     LOAD_SMALL_INT          90
+                STORE_FAST               4 (_z2)
+
+ 566            LOAD_GLOBAL              5 (range + NULL)
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST_BORROW         0 (body)
+                CALL                     1
+                CALL                     1
+                GET_ITER
+        L3:     FOR_ITER                48 (to L4)
+                STORE_FAST               5 (_zi)
+
+ 567            LOAD_FAST_BORROW         4 (_z2)
+                LOAD_GLOBAL              7 (ord + NULL)
+                LOAD_FAST_BORROW_LOAD_FAST_BORROW 5 (body, _zi)
+                BINARY_OP               26 ([])
+                CALL                     1
+                LOAD_SMALL_INT          55
+                BINARY_OP                5 (*)
+                LOAD_FAST_BORROW         5 (_zi)
+                BINARY_OP                0 (+)
+                BINARY_OP               12 (^)
+                LOAD_SMALL_INT         255
+                BINARY_OP                1 (&)
+                STORE_FAST               4 (_z2)
+                JUMP_BACKWARD           50 (to L3)
+
+ 566    L4:     END_FOR
+                POP_ITER
+
+ 568            LOAD_GLOBAL              9 (bytearray + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              13 ((12, 6, 8, 7, 14, 7, 5, 2, 15, 14, 5, 12, 4, 4, 1, 2))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST               6 (_p0)
+
+ 569            LOAD_GLOBAL              9 (bytearray + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              14 ((10, 3, 7, 13, 14, 9, 2, 11, 4, 15, 6, 1, 12, 8, 5, 0))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST               7 (_p1)
+
+ 570            LOAD_GLOBAL             10 (tuple)
+                COPY                     1
+                LOAD_COMMON_CONSTANT     2 (tuple)
+                IS_OP                    0 (is)
+                POP_JUMP_IF_FALSE       29 (to L7)
+                NOT_TAKEN
+                POP_TOP
+                BUILD_LIST               0
+                LOAD_CONST               2 (<code object <genexpr> at 0x000002B3D9757440, file "/opt/outer-heaven/codec.py", line 570>)
+                MAKE_FUNCTION
+                LOAD_GLOBAL             13 (zip + NULL)
+                LOAD_FAST_BORROW_LOAD_FAST_BORROW 103 (_p0, _p1)
+                CALL                     2
+                GET_ITER
+                CALL                     0
+        L5:     FOR_ITER                 3 (to L6)
+                LIST_APPEND              2
+                JUMP_BACKWARD            5 (to L5)
+        L6:     END_FOR
+                POP_ITER
+                CALL_INTRINSIC_1         6 (INTRINSIC_LIST_TO_TUPLE)
+                JUMP_FORWARD            22 (to L8)
+        L7:     PUSH_NULL
+                LOAD_CONST               2 (<code object <genexpr> at 0x000002B3D9757440, file "/opt/outer-heaven/codec.py", line 570>)
+                MAKE_FUNCTION
+                LOAD_GLOBAL             13 (zip + NULL)
+                LOAD_FAST_BORROW_LOAD_FAST_BORROW 103 (_p0, _p1)
+                CALL                     2
+                GET_ITER
+                CALL                     0
+                CALL                     1
+        L8:     STORE_DEREF             33 (_p2)
+
+ 571            LOAD_DEREF              33 (_p2)
+                LOAD_SMALL_INT           0
+                BINARY_OP               26 ([])
+                LOAD_SMALL_INT           5
+                BINARY_OP                3 (<<)
+                LOAD_DEREF              33 (_p2)
+                LOAD_SMALL_INT           4
+                BINARY_OP               26 ([])
+                LOAD_SMALL_INT           6
+                BINARY_OP                3 (<<)
+                BINARY_OP               12 (^)
+                STORE_FAST               8 (_p3)
+
+ 572            LOAD_SMALL_INT          19
+                LOAD_SMALL_INT          23
+                STORE_FAST_STORE_FAST  169 (_n1, _n0)
+
+ 573            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              15 ((162, 173, 30, 255, 31, 13, 126, 124, 197, 62, 136, 123, 145, 189, 247, 185, 7, 232, 76, 0, 0, 0, 0, 0))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              11 (_q0)
+
+ 574            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              16 ((129, 212, 235, 218, 178, 36, 220, 81, 122, 222, 252, 250, 199, 126, 244, 251, 241, 122, 94, 89, 45, 239, 252, 0))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              12 (_q1)
+
+ 575            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+
+ 576            LOAD_SMALL_INT          29
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT          99
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT          59
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT         238
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT         131
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT          82
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT          66
+
+ 575            LIST_APPEND              1
+
+ 576            LOAD_SMALL_INT          59
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT          67
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT          18
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT          49
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT         117
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT         145
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT         221
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT         111
+
+ 575            LIST_APPEND              1
+
+ 577            LOAD_SMALL_INT         221
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         103
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         166
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT          82
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         219
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         233
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         216
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         140
+
+ 575            LIST_APPEND              1
+
+ 578            LOAD_SMALL_INT         159
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT         134
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT         214
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT         109
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT         204
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT         210
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT          64
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT         113
+
+ 575            LIST_APPEND              1
+
+ 579            LOAD_SMALL_INT          37
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT         199
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT          91
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT          32
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT         169
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT         193
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT         150
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT         253
+
+ 575            LIST_APPEND              1
+
+ 580            LOAD_SMALL_INT         236
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT         146
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT         165
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT          59
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT          98
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT           3
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT         211
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT         138
+
+ 575            LIST_APPEND              1
+
+ 581            LOAD_SMALL_INT          14
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT          97
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT          36
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT         101
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT         116
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT         250
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT           1
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT          20
+
+ 575            LIST_APPEND              1
+
+ 582            LOAD_SMALL_INT          47
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT         186
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT         163
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT          51
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT          23
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT         247
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT         206
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT         242
+
+ 575            LIST_APPEND              1
+
+ 583            LOAD_SMALL_INT         185
+
+ 575            LIST_APPEND              1
+                CALL                     1
+                STORE_DEREF             34 (_q2)
+
+ 585            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              17 ((212, 31, 138, 3, 230, 194, 123, 95))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              13 (_mk0)
+
+ 586            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              18 ((169, 44, 20, 247, 61, 136, 1, 190, 197, 106))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              14 (_mk1)
+
+ 587            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              19 ((126, 243, 41, 208, 74, 184, 145, 204))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              15 (_ms0)
+
+ 588            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              20 ((21, 234, 71, 141, 242, 54, 201, 11, 115, 213))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              16 (_ms1)
+
+ 589            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              21 ((134, 90, 225, 60, 249, 13, 98, 180))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              17 (_mb0)
+
+ 590            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              22 ((199, 46, 147, 79, 160, 27, 216, 100, 229, 55))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_FAST              18 (_mb1)
+
+ 591            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              23 ((118, 103, 100, 110, 102, 60, 88, 97, 102, 96, 96))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_DEREF             32 (_kx)
+
+ 592            LOAD_GLOBAL              3 (bytes + NULL)
+                BUILD_LIST               0
+                LOAD_CONST              24 ((117, 109, 110, 56, 53, 56))
+                LIST_EXTEND              1
+                CALL                     1
+                STORE_DEREF             39 (_sx)
+
+ 593            LOAD_GLOBAL              3 (bytes + NULL)
+                LOAD_FAST_BORROW        33 (_p2)
+                LOAD_FAST_BORROW        39 (_sx)
+                BUILD_TUPLE              2
+                LOAD_CONST               3 (<code object <genexpr> at 0x000002B3D95FF470, file "/opt/outer-heaven/codec.py", line 593>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_GLOBAL              5 (range + NULL)
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_DEREF              39 (_sx)
+                CALL                     1
+                CALL                     1
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                LOAD_ATTR               15 (decode + NULL|self)
+                CALL                     0
+                STORE_FAST              19 (_s0)
+
+ 594            LOAD_GLOBAL              3 (bytes + NULL)
+                LOAD_FAST_BORROW        32 (_kx)
+                LOAD_FAST_BORROW        33 (_p2)
+                BUILD_TUPLE              2
+                LOAD_CONST               4 (<code object <genexpr> at 0x000002B3D95FF800, file "/opt/outer-heaven/codec.py", line 594>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_GLOBAL              5 (range + NULL)
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_DEREF              32 (_kx)
+                CALL                     1
+                CALL                     1
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                LOAD_ATTR               15 (decode + NULL|self)
+                CALL                     0
+                STORE_FAST              20 (_s1)
+
+ 595            LOAD_SMALL_INT          90
+                LOAD_GLOBAL              9 (bytearray + NULL)
+                CALL                     0
+                SWAP                     2
+                STORE_FAST              21 (_r0)
+                STORE_DEREF             35 (_r1)
+
+ 596            LOAD_GLOBAL             17 (enumerate + NULL)
+                LOAD_FAST_BORROW        11 (_q0)
+                LOAD_CONST               5 (None)
+                LOAD_FAST_BORROW         9 (_n0)
+                BINARY_SLICE
+                CALL                     1
+                GET_ITER
+        L9:     FOR_ITER                78 (to L10)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              22 (_ri)
+                STORE_FAST              23 (_rb)
+
+ 597            LOAD_FAST_BORROW        21 (_r0)
+                LOAD_FAST_BORROW        22 (_ri)
+                LOAD_SMALL_INT          31
+                BINARY_OP                5 (*)
+                BINARY_OP               12 (^)
+                LOAD_SMALL_INT         255
+                BINARY_OP                1 (&)
+                STORE_FAST              24 (_rk)
+
+ 598            LOAD_FAST_BORROW        23 (_rb)
+                LOAD_FAST_BORROW        24 (_rk)
+                BINARY_OP               12 (^)
+                STORE_FAST              25 (_rc)
+
+ 599            LOAD_DEREF              35 (_r1)
+                LOAD_ATTR               19 (append + NULL|self)
+                LOAD_FAST_BORROW        25 (_rc)
+                CALL                     1
+                POP_TOP
+
+ 600            LOAD_FAST_BORROW        21 (_r0)
+                LOAD_FAST_BORROW        25 (_rc)
+                BINARY_OP                0 (+)
+                LOAD_FAST_BORROW        22 (_ri)
+                BINARY_OP                0 (+)
+                LOAD_SMALL_INT         255
+                BINARY_OP                1 (&)
+                STORE_FAST              21 (_r0)
+                JUMP_BACKWARD           80 (to L9)
+
+ 596   L10:     END_FOR
+                POP_ITER
+
+ 601            LOAD_GLOBAL             21 (_c1ph_rnd + NULL)
+                LOAD_FAST_BORROW_LOAD_FAST_BORROW 222 (_mk0, _mk1)
+                CALL                     2
+                STORE_DEREF             37 (_rm)
+
+ 602            LOAD_GLOBAL              9 (bytearray + NULL)
+                LOAD_FAST_BORROW        35 (_r1)
+                LOAD_FAST_BORROW        37 (_rm)
+                BUILD_TUPLE              2
+                LOAD_CONST               6 (<code object <genexpr> at 0x000002B3D9758AE0, file "/opt/outer-heaven/codec.py", line 602>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_GLOBAL              5 (range + NULL)
+                LOAD_FAST_BORROW         9 (_n0)
+                CALL                     1
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                STORE_DEREF             35 (_r1)
+
+ 603            LOAD_SMALL_INT          90
+                LOAD_GLOBAL              9 (bytearray + NULL)
+                CALL                     0
+                SWAP                     2
+                STORE_FAST              26 (_r2)
+                STORE_DEREF             36 (_r3)
+
+ 604            LOAD_GLOBAL             17 (enumerate + NULL)
+                LOAD_FAST_BORROW        12 (_q1)
+                LOAD_CONST               5 (None)
+                LOAD_FAST_BORROW        10 (_n1)
+                BINARY_SLICE
+                CALL                     1
+                GET_ITER
+       L11:     FOR_ITER                78 (to L12)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              22 (_ri)
+                STORE_FAST              23 (_rb)
+
+ 605            LOAD_FAST_BORROW        26 (_r2)
+                LOAD_FAST_BORROW        22 (_ri)
+                LOAD_SMALL_INT          31
+                BINARY_OP                5 (*)
+                BINARY_OP               12 (^)
+                LOAD_SMALL_INT         255
+                BINARY_OP                1 (&)
+                STORE_FAST              24 (_rk)
+
+ 606            LOAD_FAST_BORROW        23 (_rb)
+                LOAD_FAST_BORROW        24 (_rk)
+                BINARY_OP               12 (^)
+                STORE_FAST              25 (_rc)
+
+ 607            LOAD_DEREF              36 (_r3)
+                LOAD_ATTR               19 (append + NULL|self)
+                LOAD_FAST_BORROW        25 (_rc)
+                CALL                     1
+                POP_TOP
+
+ 608            LOAD_FAST_BORROW        26 (_r2)
+                LOAD_FAST_BORROW        25 (_rc)
+                BINARY_OP                0 (+)
+                LOAD_FAST_BORROW        22 (_ri)
+                BINARY_OP                0 (+)
+                LOAD_SMALL_INT         255
+                BINARY_OP                1 (&)
+                STORE_FAST              26 (_r2)
+                JUMP_BACKWARD           80 (to L11)
+
+ 604   L12:     END_FOR
+                POP_ITER
+
+ 609            LOAD_GLOBAL             21 (_c1ph_rnd + NULL)
+                LOAD_FAST_BORROW        15 (_ms0)
+                LOAD_FAST_BORROW        16 (_ms1)
+                CALL                     2
+                STORE_DEREF             38 (_sm)
+
+ 610            LOAD_GLOBAL              9 (bytearray + NULL)
+                LOAD_FAST_BORROW        36 (_r3)
+                LOAD_FAST_BORROW        38 (_sm)
+                BUILD_TUPLE              2
+                LOAD_CONST               7 (<code object <genexpr> at 0x000002B3D9758D40, file "/opt/outer-heaven/codec.py", line 610>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_GLOBAL              5 (range + NULL)
+                LOAD_FAST_BORROW        10 (_n1)
+                CALL                     1
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                STORE_DEREF             36 (_r3)
+
+ 611            LOAD_GLOBAL             21 (_c1ph_rnd + NULL)
+                LOAD_FAST_BORROW        17 (_mb0)
+                LOAD_FAST_BORROW        18 (_mb1)
+                CALL                     2
+                STORE_DEREF             31 (_bm)
+
+ 612            LOAD_GLOBAL              3 (bytes + NULL)
+                LOAD_FAST_BORROW        31 (_bm)
+                LOAD_FAST_BORROW        34 (_q2)
+                BUILD_TUPLE              2
+                LOAD_CONST               8 (<code object <genexpr> at 0x000002B3D9758FA0, file "/opt/outer-heaven/codec.py", line 612>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_GLOBAL              5 (range + NULL)
+                LOAD_SMALL_INT          64
+                CALL                     1
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                STORE_FAST              27 (_q2c)
+
+ 613            LOAD_GLOBAL             23 (getattr + NULL)
+                LOAD_GLOBAL             24 (hashlib)
+                LOAD_FAST_BORROW        20 (_s1)
+                CALL                     2
+                PUSH_NULL
+
+ 614            LOAD_FAST_BORROW        19 (_s0)
+
+ 615            LOAD_GLOBAL              3 (bytes + NULL)
+                LOAD_DEREF              35 (_r1)
+                CALL                     1
+
+ 616            LOAD_GLOBAL              3 (bytes + NULL)
+                LOAD_DEREF              36 (_r3)
+                CALL                     1
+
+ 617            LOAD_CONST               9 (699808)
+                LOAD_FAST_BORROW         8 (_p3)
+                BINARY_OP                0 (+)
+                LOAD_SMALL_INT          64
+
+ 613            LOAD_CONST              10 (('dklen',))
+                CALL_KW                  5
+                STORE_FAST              28 (_r4)
+
+ 619            LOAD_GLOBAL             17 (enumerate + NULL)
+                LOAD_FAST_BORROW         0 (body)
+                CALL                     1
+                GET_ITER
+       L13:     FOR_ITER                46 (to L15)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              29 (_vi)
+                STORE_FAST              30 (_vc)
+
+ 620            LOAD_GLOBAL              7 (ord + NULL)
+                LOAD_FAST_BORROW        30 (_vc)
+                CALL                     1
+                LOAD_FAST_BORROW        27 (_q2c)
+                LOAD_FAST_BORROW        29 (_vi)
+                BINARY_OP               26 ([])
+                LOAD_FAST_BORROW        28 (_r4)
+                LOAD_FAST_BORROW        29 (_vi)
+                BINARY_OP               26 ([])
+                BINARY_OP               12 (^)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_TRUE         3 (to L14)
+                NOT_TAKEN
+                JUMP_BACKWARD           45 (to L13)
+
+ 621   L14:     POP_TOP
+                LOAD_CONST               1 (False)
+                RETURN_VALUE
+
+ 619   L15:     END_FOR
+                POP_ITER
+
+ 622            LOAD_CONST              11 (True)
+                RETURN_VALUE
+

@@ -1,0 +1,5 @@
+*Solve this at your own risk
+
+This challenge has no writeup. It is a real C2 agent beacon that is pointing to an address that is not publicly accessible via WAN.
+
+Identify what C2 framework this beacon uses. (E.g: OWASPKL{covenant}).
