@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentinel CTF — OWASP KL Cyber Arena & Reverse Engineering</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: #060814; color: #f8fafc; font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8 flex flex-col items-center">
+  <div class="w-full max-w-5xl space-y-6">
+    
+    <!-- Top Header -->
+    <div class="glass rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="flex items-center gap-3.5">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-500 via-red-600 to-amber-500 flex items-center justify-center text-2xl shadow-[0_0_30px_rgba(239,68,68,0.4)]">
+          🚩
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-extrabold text-white text-2xl">Sentinel CTF Arena</h1>
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">OWASP KL</span>
+          </div>
+          <p class="text-xs text-slate-400 mono">Capture The Flag • Reverse Engineering • Malware Analysis</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="text-right">
+          <div class="text-xs text-slate-400 font-mono">Score Tally</div>
+          <div class="text-2xl font-black text-rose-400 mono">1,657 PTS</div>
+        </div>
+        <a href="https://hub.sentinelai.studio" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-slate-300">
+          Master Hub ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Challenges Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      
+      <!-- Challenge Card 1 -->
+      <div class="glass rounded-3xl p-5 space-y-3 relative overflow-hidden border-rose-500/20">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-[10px] font-bold font-mono">
+            ✓ SOLVED
+          </span>
+          <span class="text-sm font-bold text-rose-400 mono">494 PTS</span>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-base">unpackme1 - Medium</h3>
+          <p class="text-xs text-slate-400">Unpackme Series (Reverse Engineering & UPX Deobfuscation)</p>
+        </div>
+        <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+          <span>Solves: 76</span>
+          <span class="text-cyan-400">analyze2.py</span>
+        </div>
+      </div>
+
+      <!-- Challenge Card 2 -->
+      <div class="glass rounded-3xl p-5 space-y-3 relative overflow-hidden border-rose-500/20">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-[10px] font-bold font-mono">
+            ✓ SOLVED
+          </span>
+          <span class="text-sm font-bold text-rose-400 mono">500 PTS</span>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-base">Logon Test</h3>
+          <p class="text-xs text-slate-400">Authentication Bypass & Payload Injection</p>
+        </div>
+        <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+          <span>Solves: 132</span>
+          <span class="text-cyan-400">login_page.html</span>
+        </div>
+      </div>
+
+      <!-- Challenge Card 3 -->
+      <div class="glass rounded-3xl p-5 space-y-3 relative overflow-hidden border-rose-500/20">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-[10px] font-bold font-mono">
+            ✓ SOLVED
+          </span>
+          <span class="text-sm font-bold text-rose-400 mono">663 PTS</span>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-base">memdiag.ai</h3>
+          <p class="text-xs text-slate-400">Reverse Engineering: Hard (Memory Dump Forensics)</p>
+        </div>
+        <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+          <span>Solves: 50</span>
+          <span class="text-cyan-400">analyze_malware.py</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Solver Scripts Terminal Preview -->
+    <div class="glass rounded-3xl p-6 space-y-3">
+      <div class="flex items-center gap-2 text-xs font-mono text-slate-400 border-b border-white/10 pb-3">
+        <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+        <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+        <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+        <span class="text-slate-300 ml-2">OWASP KL Automated Solvers & Binary Analysis Tools</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-xs text-slate-300">
+        <div class="p-3 rounded-xl bg-slate-950/60 border border-white/5">
+          <div class="text-rose-400 font-bold mb-1">analyze_malware.py</div>
+          <p class="text-[11px] text-slate-400">Memory inspection, string extraction, and heuristic malware analysis.</p>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-950/60 border border-white/5">
+          <div class="text-rose-400 font-bold mb-1">upx-4.2.4-win64</div>
+          <p class="text-[11px] text-slate-400">UPX binary unpacker & section rebuilder suite.</p>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-950/60 border border-white/5">
+          <div class="text-rose-400 font-bold mb-1">challenges.json</div>
+          <p class="text-[11px] text-slate-400">Dynamic CTF challenge definitions, tags, and scoreboard sync.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
